@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2024/05/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="学个markdown先"><a href="#学个markdown先" class="headerlink" title="学个markdown先"></a>学个markdown先</h1><p>博客建的我闹心，还是先写点东西出来好了</p>
-<h2 id="这个是二级标题"><a href="#这个是二级标题" class="headerlink" title="这个是二级标题"></a>这个是二级标题</h2><p>反正就是#越多越小</p>
-<h2 id="以下是以后会用到的代码块"><a href="#以下是以后会用到的代码块" class="headerlink" title="以下是以后会用到的代码块"></a>以下是以后会用到的代码块</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// FileName: HelloWorld.java</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="comment">// Java 入口程序，程序从此入口</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello,World!&quot;</span>); <span class="comment">// 向控制台打印一条语句</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>tags</tag>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《电磁场与电磁波》课程设计：MIMO天线的设计与仿真</title>
     <url>/2024/05/05/MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/</url>
     <content><![CDATA[<h1 id="MIMO天线的设计与仿真"><a href="#MIMO天线的设计与仿真" class="headerlink" title="MIMO天线的设计与仿真"></a>MIMO天线的设计与仿真</h1><h2 id="1-课程设计要求及目的"><a href="#1-课程设计要求及目的" class="headerlink" title="1. 课程设计要求及目的"></a>1. <strong>课程设计要求及目的</strong></h2><h3 id="1-1-设计目的"><a href="#1-1-设计目的" class="headerlink" title="1.1 设计目的"></a>1.1 <strong>设计目的</strong></h3><pre><code>  了解微波仿真软件的功能。
@@ -31,8 +20,8 @@
 <span id="more"></span>
 <h2 id="2-MIMO天线原理"><a href="#2-MIMO天线原理" class="headerlink" title="2. MIMO天线原理"></a>2. <strong>MIMO天线原理</strong></h2><h3 id="2-1-微带天线相关理论基础"><a href="#2-1-微带天线相关理论基础" class="headerlink" title="2.1 微带天线相关理论基础"></a>2.1 <strong>微带天线相关理论基础</strong></h3><p>&emsp;&emsp;微带天线在性能和制造方面具有许多优点。首先，它具有重量轻、结构薄的特点，这使得它可以方便地附着于物体壁面等表面。其次，微带天线的种类越来越多，发展迅速，并且已经广泛应用于各种系统中。随着微带天线应用的广泛化，对微带天线的研究和发展也越来越深入。微带天线的理论研究日趋成熟，相关理论对于实际设计和分析微带天线具有重要的指导意义。因此，学习和研究微带天线理论具有重大意义。</p>
 <h4 id="2-1-1微带天线结构和分类"><a href="#2-1-1微带天线结构和分类" class="headerlink" title="2.1.1微带天线结构和分类"></a>2.1.1微带天线结构和分类</h4><p>&emsp;&emsp;微带天线是一种由导体薄片粘贴在背面有导体接地板的介质基片上形成的天线。通常使用微带传输线或同轴探针来馈电，以激励导体贴片与接地板之间的高频电磁场，并通过贴片四周与接地板之间的缝隙向外辐射。<br>&emsp;&emsp;根据结构特征，微带天线可分为两种类型：微带贴片天线和微带缝隙天线。微带贴片天线是将导体薄片直接粘贴在介质基片上，通过微带传输线或同轴探针进行馈电，从而激励高频电磁场，并通过贴片四周与接地板之间的缝隙向外辐射。另一种类型是微带缝隙天线，它在接地板上开设缝隙来实现馈电。在介质基片的另一面，使用微带馈线连接到接地板上开设的缝隙槽，这些缝隙可以有不同的形状。根据缝隙的不同形状，可以将其分为窄缝（缝宽远小于波长）和宽缝（缝宽与波长相比）两种形式。<br>&emsp;&emsp;此外，根据极化方式，微带天线还可以分为线极化天线、椭圆极化天线和圆极化天线等。根据工作原理，微带天线可以分为谐振型和非谐振型微带天线。</p>
-<h4 id="2-1-2MIMO天线介绍"><a href="#2-1-2MIMO天线介绍" class="headerlink" title="2.1.2MIMO天线介绍"></a>2.1.2MIMO天线介绍</h4><p>&emsp;&emsp;MIMO(Multiple-Input Multiple-Output)技术指在发射端和接收端分别使用多个发射天线和接收天线，使信号通过发射端与接收端的多个天线传送和接收，从而改善通信质量。他能充分利用空间资源，通过多个天线实现多发多收，在不增加频谱资源和天线发射功率的情况下，可以成倍的提高系统信道容量。<br><img src="/./MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/2-1.png" alt="img"><br>&emsp;&emsp;MIMO技术最早由无线通信技术的鼻祖马可尼（Marconi）于1908年提出。他认为可以通过在发射设备和接收设备布置多个天线来抑制信道衰落，从而提升无线通信系统的质量。</p>
-<h3 id="2-2-天线参数理论分析与数据计算"><a href="#2-2-天线参数理论分析与数据计算" class="headerlink" title="2.2 天线参数理论分析与数据计算"></a>2.2 <strong>天线参数理论分析与数据计算</strong></h3><p>&emsp;&emsp;天线单个辐射单元由印制在介质基板正反两面的两个倒L形辐射枝节组成,其中背面倒 L 形辐射枝节与金属地板相连接, 通过将两个天线单元以对称分布形式进行摆放, 并在天线单元之间加载一个T形地板枝节,本文所设计MIMO天线的整体结构。辐射部分和地板采用理想导体边界。<br><img src="/./MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/2-2.png" alt="img"><br>&emsp;&emsp;通常，在单极子天线的设计中，其长度一般设置为1&#x2F;4 个自由空间波长，但是对于印刷天线来说，天线是印制在介质基板上的，所以要综 合衡量基板介电常数对天线辐射性能的影响，因此根据设计经验，印刷单极子天线 的长度范围往往设置在1&#x2F;4个自由空间波长与1&#x2F;4个介质波长之间。<br><img src="/./MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/2-3.png" alt="img"> </p>
+<h4 id="2-1-2MIMO天线介绍"><a href="#2-1-2MIMO天线介绍" class="headerlink" title="2.1.2MIMO天线介绍"></a>2.1.2MIMO天线介绍</h4><p>&emsp;&emsp;MIMO(Multiple-Input Multiple-Output)技术指在发射端和接收端分别使用多个发射天线和接收天线，使信号通过发射端与接收端的多个天线传送和接收，从而改善通信质量。他能充分利用空间资源，通过多个天线实现多发多收，在不增加频谱资源和天线发射功率的情况下，可以成倍的提高系统信道容量。<br><img src="/.cn//2-1.png" alt="img"><br>&emsp;&emsp;MIMO技术最早由无线通信技术的鼻祖马可尼（Marconi）于1908年提出。他认为可以通过在发射设备和接收设备布置多个天线来抑制信道衰落，从而提升无线通信系统的质量。</p>
+<h3 id="2-2-天线参数理论分析与数据计算"><a href="#2-2-天线参数理论分析与数据计算" class="headerlink" title="2.2 天线参数理论分析与数据计算"></a>2.2 <strong>天线参数理论分析与数据计算</strong></h3><p>&emsp;&emsp;天线单个辐射单元由印制在介质基板正反两面的两个倒L形辐射枝节组成,其中背面倒 L 形辐射枝节与金属地板相连接, 通过将两个天线单元以对称分布形式进行摆放, 并在天线单元之间加载一个T形地板枝节,本文所设计MIMO天线的整体结构。辐射部分和地板采用理想导体边界。<br><img src="/.cn//2-2.png" alt="img"><br>&emsp;&emsp;通常，在单极子天线的设计中，其长度一般设置为1&#x2F;4 个自由空间波长，但是对于印刷天线来说，天线是印制在介质基板上的，所以要综 合衡量基板介电常数对天线辐射性能的影响，因此根据设计经验，印刷单极子天线 的长度范围往往设置在1&#x2F;4个自由空间波长与1&#x2F;4个介质波长之间。<br><img src="/.cn//2-3.png" alt="img"> </p>
 <h2 id="3-仿真分析"><a href="#3-仿真分析" class="headerlink" title="3. 仿真分析"></a>3. <strong>仿真分析</strong></h2><h3 id="单个天线单元分析"><a href="#单个天线单元分析" class="headerlink" title="单个天线单元分析"></a>单个天线单元分析</h3><h3 id="MIMO天线设计"><a href="#MIMO天线设计" class="headerlink" title="MIMO天线设计"></a>MIMO天线设计</h3><h2 id="4-优化设计"><a href="#4-优化设计" class="headerlink" title="4. 优化设计"></a>4. <strong>优化设计</strong></h2><ul>
 <li>中心频率优化</li>
 <li>隔离度优化</li>
@@ -43,6 +32,22 @@
 <h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. <strong>总结</strong></h2><h2 id="6-参考文献"><a href="#6-参考文献" class="headerlink" title="6. 参考文献"></a>6. <strong>参考文献</strong></h2>]]></content>
       <tags>
         <tag>电磁场</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>夜封鹤皋</title>
+    <url>/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2024/05/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="学个markdown先"><a href="#学个markdown先" class="headerlink" title="学个markdown先"></a>学个markdown先</h1><p>博客建的我闹心，还是先写点东西出来好了</p>
+<h2 id="这个是二级标题"><a href="#这个是二级标题" class="headerlink" title="这个是二级标题"></a>这个是二级标题</h2><p>反正就是#越多越小</p>
+<h2 id="以下是以后会用到的代码块"><a href="#以下是以后会用到的代码块" class="headerlink" title="以下是以后会用到的代码块"></a>以下是以后会用到的代码块</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// FileName: HelloWorld.java</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="comment">// Java 入口程序，程序从此入口</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello,World!&quot;</span>); <span class="comment">// 向控制台打印一条语句</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>tags</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -62,10 +67,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>夜封鹤皋</title>
-    <url>/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
