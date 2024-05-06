@@ -40,32 +40,12 @@
       </tags>
   </entry>
   <entry>
-    <title>夜封鹤皋</title>
-    <url>/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/05/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>射频发射机</title>
     <url>/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/</url>
-    <content><![CDATA[<h1 id="无线电发射与接收设备设计与实践"><a href="#无线电发射与接收设备设计与实践" class="headerlink" title="无线电发射与接收设备设计与实践"></a>无线电发射与接收设备设计与实践</h1><h2 id="1、设计题目"><a href="#1、设计题目" class="headerlink" title="1、设计题目"></a>1、设计题目</h2><ul>
+    <content><![CDATA[<p>&emsp;&emsp;在大二时完成的高频课设，现在作为Markdown书写练习发布在博客上，这也算是对大学学习内容进行总结。</p>
+<p><strong>摘要</strong>:无线电发射与接收设备在高频电子线路系统中扮演着重要角色，广泛应用于通信、广播、电视、安全防范、遥控遥测、雷达、电子对抗和无线导航领域。随着通信技术的发展，无线电技术的重要性日益凸显。本文选取调频发射机作为课程设计方案，介绍了其工作原理、制作方法、系统组成框图、各部分功能和PCB电路板设计。该发射机可在88-108MHz频段内进行调制，传输距离可达40m以上，可被普通调频收音机或四六级听力耳机接收。<br><strong>关键词：调频发射机、音频信号、调制波、载波</strong></p>
+<span id="more"></span>
+<h1 id="无线电发射与接收设备设计与实践"><a href="#无线电发射与接收设备设计与实践" class="headerlink" title="无线电发射与接收设备设计与实践"></a>无线电发射与接收设备设计与实践</h1><h2 id="1、设计题目"><a href="#1、设计题目" class="headerlink" title="1、设计题目"></a>1、设计题目</h2><ul>
 <li>调频（或调幅）发射机设计</li>
 </ul>
 <h2 id="2、实践目的"><a href="#2、实践目的" class="headerlink" title="2、实践目的"></a>2、实践目的</h2><p>&emsp;&emsp;无线电发射与接收设备是高频电子线路的综合应用，是现代化通信系统、广播与电视系统、无线安全防范系统、无线遥控和遥测系统、雷达系统、电子对抗系统、无线电制导系统等，必不可少的设备。本次设计要达到以下目的：</p>
@@ -109,5 +89,28 @@
         <tag>tags</tag>
         <tag>随笔</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/05/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>夜封鹤皋</title>
+    <url>/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
