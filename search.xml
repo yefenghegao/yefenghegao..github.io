@@ -3,8 +3,7 @@
   <entry>
     <title>《电磁场与电磁波》课程设计：MIMO天线的设计与仿真</title>
     <url>/2024/05/05/MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/</url>
-    <content><![CDATA[<span id="more"></span>
-<h1 id="MIMO天线的设计与仿真"><a href="#MIMO天线的设计与仿真" class="headerlink" title="MIMO天线的设计与仿真"></a>MIMO天线的设计与仿真</h1><h2 id="1-课程设计要求及目的"><a href="#1-课程设计要求及目的" class="headerlink" title="1. 课程设计要求及目的"></a>1. <strong>课程设计要求及目的</strong></h2><h3 id="1-1-设计目的"><a href="#1-1-设计目的" class="headerlink" title="1.1 设计目的"></a>1.1 <strong>设计目的</strong></h3><p>&emsp;&emsp;(1)了解微波仿真软件的功能。<br>&emsp;&emsp;(2)熟悉微波仿真软件的使用。<br>&emsp;&emsp;(3)通过微波仿真，加深对电磁场与电磁波的理解。</p>
+    <content><![CDATA[<h1 id="MIMO天线的设计与仿真"><a href="#MIMO天线的设计与仿真" class="headerlink" title="MIMO天线的设计与仿真"></a>MIMO天线的设计与仿真</h1><h2 id="1-课程设计要求及目的"><a href="#1-课程设计要求及目的" class="headerlink" title="1. 课程设计要求及目的"></a>1. <strong>课程设计要求及目的</strong></h2><h3 id="1-1-设计目的"><a href="#1-1-设计目的" class="headerlink" title="1.1 设计目的"></a>1.1 <strong>设计目的</strong></h3><p>&emsp;&emsp;(1)了解微波仿真软件的功能。<br>&emsp;&emsp;(2)熟悉微波仿真软件的使用。<br>&emsp;&emsp;(3)通过微波仿真，加深对电磁场与电磁波的理解。</p>
 <h3 id="1-2-设计要求"><a href="#1-2-设计要求" class="headerlink" title="1.2 设计要求"></a>1.2 <strong>设计要求</strong></h3><pre><code>  频率范围：2450MHz～2550MHz，5100MHz～5750MHz
   驻波比：≤2
   增益：3dB;
