@@ -19,25 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"alte17irony.cn","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="AltE的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AltE&#39;s Blog">
-<meta property="og:url" content="http://alte17irony.cn/index.html">
+    <meta name="description" content="无线电发射与接收设备设计与实践1、设计题目 调频（或调幅）发射机设计  2、实践目的&emsp;&emsp;无线电发射与接收设备是高频电子线路的综合应用，是现代化通信系统、广播与电视系统、无线安全防范系统、无线遥控和遥测系统、雷达系统、电子对抗系统、无线电制导系统等，必不可少的设备。本次设计要达到以下目的：  进一步认识射频发射与接收系统； 掌握调频（或调幅）无线电发射机的设计； 学习无线电通信系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="射频发射机">
+<meta property="og:url" content="http://alte17irony.cn/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/index.html">
 <meta property="og:site_name" content="AltE&#39;s Blog">
-<meta property="og:description" content="AltE的个人博客">
+<meta property="og:description" content="无线电发射与接收设备设计与实践1、设计题目 调频（或调幅）发射机设计  2、实践目的&emsp;&emsp;无线电发射与接收设备是高频电子线路的综合应用，是现代化通信系统、广播与电视系统、无线安全防范系统、无线遥控和遥测系统、雷达系统、电子对抗系统、无线电制导系统等，必不可少的设备。本次设计要达到以下目的：  进一步认识射频发射与接收系统； 掌握调频（或调幅）无线电发射机的设计； 学习无线电通信系">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-19T16:20:13.000Z">
+<meta property="article:modified_time" content="2024-05-06T16:47:47.709Z">
 <meta property="article:author" content="AltE-Zhang">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://alte17irony.cn/">
+<link rel="canonical" href="http://alte17irony.cn/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://alte17irony.cn/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/","path":"2024/03/20/射频发射机/","title":"射频发射机"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>AltE's Blog</title>
+<title>射频发射机 | AltE's Blog</title>
   
 
 
@@ -70,7 +72,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">AltE's Blog</h1>
+      <p class="site-title">AltE's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -123,7 +125,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -136,6 +138,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A0%E7%BA%BF%E7%94%B5%E5%8F%91%E5%B0%84%E4%B8%8E%E6%8E%A5%E6%94%B6%E8%AE%BE%E5%A4%87%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5"><span class="nav-number">1.</span> <span class="nav-text">无线电发射与接收设备设计与实践</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E8%AE%A1%E9%A2%98%E7%9B%AE"><span class="nav-number">1.1.</span> <span class="nav-text">1、设计题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%AE%9E%E8%B7%B5%E7%9B%AE%E7%9A%84"><span class="nav-number">1.2.</span> <span class="nav-text">2、实践目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82"><span class="nav-number">1.3.</span> <span class="nav-text">3、设计要求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1%E5%8D%95%E5%85%83%E7%94%B5%E8%B7%AF"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1单元电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2%E5%8F%91%E5%B0%84%E6%9C%BA%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2发射机设计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86"><span class="nav-number">1.4.</span> <span class="nav-text">4、电路原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1FM%E8%B0%83%E5%88%B6%E5%8E%9F%E7%90%86"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1FM调制原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-%E7%9B%B4%E6%8E%A5%E8%B0%83%E9%A2%91"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">4.1.1 直接调频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2%E9%97%B4%E6%8E%A5%E8%B0%83%E9%A2%91"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">4.1.2间接调频</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2%E6%96%B9%E6%A1%88%E9%80%89%E6%8B%A9"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2方案选择</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.5.</span> <span class="nav-text">5、电路设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1原理图设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-1%E4%BA%8C%E7%BA%A7FM%E5%8F%91%E5%B0%84%E6%9C%BA"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">5.1.1二级FM发射机</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E5%BF%83%E5%BE%97"><span class="nav-number">1.6.</span> <span class="nav-text">实验心得</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">1.7.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -177,327 +180,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://alte17irony.cn/2024/05/05/MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="AltE-Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AltE's Blog">
-      <meta itemprop="description" content="AltE的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | AltE's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/05/05/MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/" class="post-title-link" itemprop="url">《电磁场与电磁波》课程设计：MIMO天线的设计与仿真</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-05-05 03:15:09 / 修改时间：20:17:53" itemprop="dateCreated datePublished" datetime="2024-05-05T03:15:09+08:00">2024-05-05</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="MIMO天线的设计与仿真"><a href="#MIMO天线的设计与仿真" class="headerlink" title="MIMO天线的设计与仿真"></a>MIMO天线的设计与仿真</h1><h2 id="1-课程设计要求及目的"><a href="#1-课程设计要求及目的" class="headerlink" title="1. 课程设计要求及目的"></a>1. <strong>课程设计要求及目的</strong></h2><h3 id="1-1-设计目的"><a href="#1-1-设计目的" class="headerlink" title="1.1 设计目的"></a>1.1 <strong>设计目的</strong></h3><pre><code>  了解微波仿真软件的功能。
-  熟悉微波仿真软件的使用。
-  通过微波仿真，加深对电磁场与电磁波的理解。
-</code></pre>
-<h3 id="1-2-设计要求"><a href="#1-2-设计要求" class="headerlink" title="1.2 设计要求"></a>1.2 <strong>设计要求</strong></h3><pre><code>  频率范围：2450MHz～2550MHz，5100MHz～5750MHz
-  驻波比：≤2
-  增益：3dB;
-  两单元MIMO天线
-  天线在2400MHz～2500MHz
-  频带内单元间隔离度≥40dB
-  天线尺寸：100mm×100mm×20mm
-  相对介电常数：3.1
-  基板厚度：1.519mm
-</code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/05/05/MIMO%E5%A4%A9%E7%BA%BF%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E4%BB%BF%E7%9C%9F/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://alte17irony.cn/2024/05/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="AltE-Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AltE's Blog">
-      <meta itemprop="description" content="AltE的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | AltE's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/05/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-05-05 03:10:00 / 修改时间：13:23:29" itemprop="dateCreated datePublished" datetime="2024-05-05T03:10:00+08:00">2024-05-05</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="学个markdown先"><a href="#学个markdown先" class="headerlink" title="学个markdown先"></a>学个markdown先</h1><p>博客建的我闹心，还是先写点东西出来好了</p>
-<h2 id="这个是二级标题"><a href="#这个是二级标题" class="headerlink" title="这个是二级标题"></a>这个是二级标题</h2><p>反正就是#越多越小</p>
-<h2 id="以下是以后会用到的代码块"><a href="#以下是以后会用到的代码块" class="headerlink" title="以下是以后会用到的代码块"></a>以下是以后会用到的代码块</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// FileName: HelloWorld.java</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="comment">// Java 入口程序，程序从此入口</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello,World!&quot;</span>); <span class="comment">// 向控制台打印一条语句</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://alte17irony.cn/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="AltE-Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AltE's Blog">
-      <meta itemprop="description" content="AltE的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | AltE's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/05/04/%E5%A4%9C%E5%B0%81%E9%B9%A4%E7%9A%8B/" class="post-title-link" itemprop="url">夜封鹤皋</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-05-04 19:18:51" itemprop="dateCreated datePublished" datetime="2024-05-04T19:18:51+08:00">2024-05-04</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://alte17irony.cn/2024/05/03/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="AltE-Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AltE's Blog">
-      <meta itemprop="description" content="AltE的个人博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | AltE's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/05/03/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-05-03 03:40:26 / 修改时间：03:39:24" itemprop="dateCreated datePublished" datetime="2024-05-03T03:40:26+08:00">2024-05-03</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://alte17irony.cn/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -511,13 +204,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | AltE's Blog">
+      <meta itemprop="name" content="射频发射机 | AltE's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/03/20/%E5%B0%84%E9%A2%91%E5%8F%91%E5%B0%84%E6%9C%BA/" class="post-title-link" itemprop="url">射频发射机</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          射频发射机
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -546,8 +239,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="无线电发射与接收设备设计与实践"><a href="#无线电发射与接收设备设计与实践" class="headerlink" title="无线电发射与接收设备设计与实践"></a>无线电发射与接收设备设计与实践</h1><h2 id="1、设计题目"><a href="#1、设计题目" class="headerlink" title="1、设计题目"></a>1、设计题目</h2><ul>
+    <div class="post-body" itemprop="articleBody"><h1 id="无线电发射与接收设备设计与实践"><a href="#无线电发射与接收设备设计与实践" class="headerlink" title="无线电发射与接收设备设计与实践"></a>无线电发射与接收设备设计与实践</h1><h2 id="1、设计题目"><a href="#1、设计题目" class="headerlink" title="1、设计题目"></a>1、设计题目</h2><ul>
 <li>调频（或调幅）发射机设计</li>
 </ul>
 <h2 id="2、实践目的"><a href="#2、实践目的" class="headerlink" title="2、实践目的"></a>2、实践目的</h2><p>&emsp;&emsp;无线电发射与接收设备是高频电子线路的综合应用，是现代化通信系统、广播与电视系统、无线安全防范系统、无线遥控和遥测系统、雷达系统、电子对抗系统、无线电制导系统等，必不可少的设备。本次设计要达到以下目的：</p>
@@ -580,7 +272,6 @@
 <li>华成英，模拟电子技术基本教程，清华大学出版社，2006.2</li>
 </ol>
 
-      
     </div>
 
     
@@ -588,8 +279,18 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/05/03/hello-world/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -598,6 +299,8 @@
 
 
 
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81OTgwOS8zNjI3MQ"></div>
 </div>
   </main>
 
